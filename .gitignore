@@ -1,0 +1,4 @@
+data/
+build/
+*.so
+*.t7
