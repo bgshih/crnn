@@ -224,7 +224,7 @@ end
 
 function modelState(model)
     --[[ Get model state, including model parameters (weights and biases) and
-         running mean/std in batch normalization layers
+         running mean/var in batch normalization layers
     ARGS:
       - `model` : network model
     RETURN:
@@ -235,12 +235,12 @@ function modelState(model)
     local bnLayers = model:findModules('nn.BatchNormalization')
     for i = 1, #bnLayers do
         bnVars[#bnVars+1] = bnLayers[i].running_mean
-        bnVars[#bnVars+1] = bnLayers[i].running_std
+        bnVars[#bnVars+1] = bnLayers[i].running_var
     end
     local bnLayers = model:findModules('nn.SpatialBatchNormalization')
     for i = 1, #bnLayers do
         bnVars[#bnVars+1] = bnLayers[i].running_mean
-        bnVars[#bnVars+1] = bnLayers[i].running_std
+        bnVars[#bnVars+1] = bnLayers[i].running_var
     end
     local state = {parameters = parameters, bnVars = bnVars}
     return state
