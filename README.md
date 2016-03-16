@@ -7,7 +7,7 @@ This software implements the Convolutional Recurrent Neural Network (CRNN), a co
 Build
 -----
 
-The software has only been tested on Ubuntu 14.04 (x64). CUDA-enabled GPUs are required. To build the project, first install [Torch7](http://torch.ch), [TH++](https://github.com/facebook/thpp) and LMDB. Please follow their installation instructions. On Ubuntu, lmdb can be installed by ``apt-get install liblmdb-dev``.
+The software has only been tested on Ubuntu 14.04 (x64). CUDA-enabled GPUs are required. To build the project, first install the latest versions of [Torch7](http://torch.ch), [fblualib](https://github.com/facebook/fblualib) and LMDB. Please follow their installation instructions respectively. On Ubuntu, lmdb can be installed by ``apt-get install liblmdb-dev``.
 
 To build the project, go to ``src/`` and execute ``sh build_cpp.sh`` to build the C++ code. If successful, a file named ``libcrnn.so`` should be produced in the ``src/`` directory.
 
