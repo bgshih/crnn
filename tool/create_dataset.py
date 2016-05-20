@@ -57,13 +57,13 @@ def createDataset(outputPath, imagePathList, labelList, lexiconList=None, checkV
         if lexiconList:
             lexiconKey = 'lexicon-%09d' % cnt
             cache[lexiconKey] = ' '.join(lexiconList[i])
-        if cnt % 1000 = 0:
+        if cnt % 1000 == 0:
             writeCache(env, cache)
             cache = {}
             print('Written %d / %d' % (cnt, nSamples))
         cnt += 1
     nSamples = cnt-1
-    cache['num-samples'] = nSamples
+    cache['num-samples'] = str(nSamples)
     writeCache(env, cache)
     print('Created dataset with %d samples' % nSamples)
 
