@@ -53,7 +53,7 @@ int forwardBackward(lua_State* L) {
         for (int t = 1; t < inputLength; ++t) {
             const thpp::Tensor<T>& currLogActs = input_i[t];
             const thpp::Tensor<T>& prefFvars = fvars[t-1];
-            int sBegin = std::max(0, nSegment - (2 * inputLength - t));
+            int sBegin = std::max(0, nSegment - (2 * (inputLength - t)));
             int sEnd = std::min(nSegment, 2 * (t + 1));
             for (int s = sBegin; s < sEnd; ++s) { // FIXME: < or <= ??
                 T fv;
@@ -94,7 +94,7 @@ int forwardBackward(lua_State* L) {
             for (int t = inputLength-2; t >= 0; --t) {
                 const thpp::Tensor<T>& prevLogActs = input_i[t+1];
                 const thpp::Tensor<T>& prevBvars = bvars[t+1];
-                int sBegin = std::max(0, nSegment - (2 * inputLength - t));
+                int sBegin = std::max(0, nSegment - (2 * (inputLength - t)));
                 int sEnd = std::min(nSegment, 2 * (t + 1));
                 for (int s = sBegin; s < sEnd; ++s) {
                     T bv;
