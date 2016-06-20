@@ -163,6 +163,7 @@ end
 function LstmLayer:updateGradInput(input, gradOutput)
     assert(#input == #gradOutput)
     local T = #input
+    self.gradInput = {}
 
     if not self.reverse then
         self.drnnState = {[T] = cloneList(self.initState, true)} -- zero gradient for the last frame
