@@ -291,7 +291,8 @@ end
 function recognizeImageWithLexicion(model, image, lexicon)
     --[[ Text recognition with a lexicon.
     ARGS:
-      - `imagePath` : string, image path
+      - `model`: CRNN model
+      - `image` : single-channel image, byte tensor
       - `lexicon`   : list of string, lexicon words
     RETURN:
       - `str`       : recognized string
