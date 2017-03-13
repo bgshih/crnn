@@ -43,11 +43,19 @@ Train a new model
 Follow the following steps to train a new model on your own dataset.
 
   1. Create a new LMDB dataset. A python program is provided in ``tool/create_dataset.py``. Refer to the function ``createDataset`` for details (need to ``pip install lmdb`` first).
-  2. Create model directory under ``model/``. For example, ``model/foo_model``. Then create 
+  2. Create model directory under ``model/``. For example, ``model/foo_model``. Then create
    configuraton file ``config.lua`` under the model directory. You can copy ``model/crnn_demo/config.lua`` and do modifications.
   3. Go to ``src/`` and execute ``th main_train.lua ../models/foo_model/``. Model snapshots and logging file will be saved into the model directory.
 
 
+Build using docker
+------------------
+
+  1. Install docker. Follow the instructions [here](https://docs.docker.com/engine/installation/)
+  2. Install nvidia-docker - Follow the instructions [here](https://github.com/NVIDIA/nvidia-docker)
+  3. Clone this repo, from this directory run `docker build -t crnn_docker .`
+  4. Once the image is built, the docker can be run using `nvidia-docker run -it crnn_docker`.
+  
 Citation
 --------
 
