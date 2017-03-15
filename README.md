@@ -3,6 +3,8 @@ Convolutional Recurrent Neural Network
 
 This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR. For details, please refer to our paper http://arxiv.org/abs/1507.05717.
 
+**UPDATE (Mar 14)** A Docker file has been added to the project. Thanks to @varun-suresh.
+
 
 Build
 -----
