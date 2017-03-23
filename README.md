@@ -5,6 +5,8 @@ This software implements the Convolutional Recurrent Neural Network (CRNN), a co
 
 **UPDATE (Mar 14)** A Docker file has been added to the project. Thanks to @varun-suresh.
 
+**PYTORCH IMPLEMENTATION AVAILABLE** at https://github.com/meijieru/crnn.pytorch. Thanks to @meijieru.
+
 
 Build
 -----
