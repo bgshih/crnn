@@ -33,6 +33,11 @@ Expected output:
     Loading model...
     Model loaded from ../model/crnn_demo/model.t7
     Recognized text: available (raw: a-----v--a-i-l-a-bb-l-e---)
+    
+Another example:
+![Example Image2](./data/demo2.jpg)
+
+    Recognized text: shakeshack (raw: ss-h-a--k-e-ssh--aa-c--k--)
 
 
 Use pretrained model
