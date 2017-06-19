@@ -3,11 +3,11 @@ Convolutional Recurrent Neural Network
 
 This software implements the Convolutional Recurrent Neural Network (CRNN), a combination of CNN, RNN and CTC loss for image-based sequence recognition tasks, such as scene text recognition and OCR. For details, please refer to our paper http://arxiv.org/abs/1507.05717.
 
-**UPDATE (Mar 14)** A Docker file has been added to the project. Thanks to @varun-suresh.
+**UPDATE Mar 14, 2017** A Docker file has been added to the project. Thanks to [@varun-suresh](https://github.com/varun-suresh).
 
-**PYTORCH IMPLEMENTATION AVAILABLE** at https://github.com/meijieru/crnn.pytorch. Thanks to @meijieru.
+**UPDATE May 1, 2017** A PyTorch [port](https://github.com/meijieru/crnn.pytorch) has been made by [@meijieru](https://github.com/meijieru).
 
-For an end-to-end text detector+recognizer, check the CTPN + CRNN implementation by @AKSHAYUBHAT at https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/tree/master/notebooks/OCR.
+**UPDATE Jun 19, 2017** For an end-to-end text detector+recognizer, check out the [CTPN+CRNN implementation](https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/tree/master/notebooks/OCR) by [@AKSHAYUBHAT](https://github.com/AKSHAYUBHAT).
 
 Build
 -----
