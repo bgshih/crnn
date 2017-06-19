@@ -7,6 +7,7 @@ This software implements the Convolutional Recurrent Neural Network (CRNN), a co
 
 **PYTORCH IMPLEMENTATION AVAILABLE** at https://github.com/meijieru/crnn.pytorch. Thanks to @meijieru.
 
+For an end-to-end text detector+recognizer, check the CTPN + CRNN implementation by @AKSHAYUBHAT at https://github.com/AKSHAYUBHAT/DeepVideoAnalytics/tree/master/notebooks/OCR.
 
 Build
 -----
