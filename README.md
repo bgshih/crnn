@@ -71,15 +71,17 @@ Citation
 
 Please cite the following paper if you are using the code/model in your research paper.
 
-    @article{ShiBY15,
+    @article{ShiBY17,
       author    = {Baoguang Shi and
                    Xiang Bai and
                    Cong Yao},
-      title     = {An End-to-End Trainable Neural Network for Image-based Sequence Recognition
+      title     = {An End-to-End Trainable Neural Network for Image-Based Sequence Recognition
                    and Its Application to Scene Text Recognition},
-      journal   = {CoRR},
-      volume    = {abs/1507.05717},
-      year      = {2015}
+      journal   = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
+      volume    = {39},
+      number    = {11},
+      pages     = {2298--2304},
+      year      = {2017}
     }
 
 
